@@ -1,11 +1,12 @@
-# MultiModal-Foundation-Model-Survey
-A literature review of the multi-modal foundation models. We try to include comprehensive related papers on this topic and focus on the methodology of correlating features from different modalities.  
+# Public benchmarks for LLM-based medical model
 
+This is a updating summary for the public benchmarks for medical LLMs.
 
-### Medical-related Models
+### Diagnosis based on text description
 
-| | Paper Title | Year | Institution | Code | Modalities |
-| :--: | :--------- | :-----: | :-----: | :-----: | :-----: |
-| 1 | Molfm: A multimodal molecular foundation model [pdf](https://arxiv.org/pdf/2307.09484) | 2023 | Tsinghua University | [Github](https://github.com/PharMolix/OpenBioMed) | Knowledge graph<br>Molecule structure<br>Text |
-| 2 | A Multimodal Biomedical Foundation Model Trained from Fifteen Million Image–Text Pairs [pdf](https://ai.nejm.org/doi/pdf/10.1056/AIoa2400640) | 2025 | Microsoft Research | - | MedImages<br>Text |
-| 3 | Medical multimodal foundation models in clinical diagnosis and treatment: Applications, challenges, and future directions [pdf](https://pdf.sciencedirectassets.com/271219/1-s2.0-S0933365725X00105/1-s2.0-S0933365725002003/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECkaCXVzLWVhc3QtMSJGMEQCIFChKCkIXhXKMC6T8eL%2FnnySVmPwygC8JoCeIYWeg%2BXDAiAqVrX%2BcMAsayMFdroX%2FcglW074KR1hJBEf4vRsG6K4uSq7BQjy%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAUaDDA1OTAwMzU0Njg2NSIMh1rNLPRkFK9%2Bo0ZqKo8Fs4V1eHcEbCZ7JR1Jj%2BzasyR0fwg0nQQpzFFxNtNHgWVC8UJBBreY5XjApqmLcnSlZPwd1J6JpHAwA3HgzhkrmbguVXlP%2FZm8wFqnPfgtKGgzOtHHPOW8%2FbMdpdaBPX4QJxtDLBYbyumPb1tCXzRKpM6LS88CkLv%2B%2FLwpYM4js%2FJ3qL0cNIpiCnddcg%2BdwWfnRLqIF7utGZuCrkkMBGy5MrJOn6fpM6bOxQyTUSuCdkc9SUgC%2B%2BjTu47GJweqTMmqotMTOwc1YRHHU2y4OxI6AEFXPt9%2FzUDR4sr%2FKLtZT4iu6mbyfaS3Wjad%2Bx%2F7%2FJMkjTx3%2Fj4ADKmhWW%2BaShDEurfwxguhwbCU2qnu5cfy2lRBBqfqDfutY3rmPEm9LGifBNvr8wOwd%2BYFLJgZEfMiNl%2F6INV1C2qVLpk3ALHNv7jNhgpT8L%2BvbmL83uPueXOUBpase07ro1lg7mhPU3FMo3Ty63j8d%2F9dSEEj5FkMWcKq4zHwEZXfkcqXwAHNa9ix6HUv%2FphbtSPtgr4BPj7EI3jSO%2BiQDHJDmQqH1TaVyfVE2lW8NvRfaEuFgzQ4ZAoRYKmZXpJbW9uvqI88Ly7GbmOjC6Gu%2B26j0Hy47B9RXbEU4lX4jOaIXsdgd60Uu4S%2FNCwbUTscjqbAV8pATcMUR5cvWxaKB0LbCTFothbtRttsN7IjH2a9v364ILAbdcKzlLmjo2as62zeXwfi%2FJtJwcnceqDQVinLk4upc9aH5Ctm8m66%2BmahXYqxOuwBlTiMF4wtoRGdt1gyUEpAzgIj%2F9f8ByYuOIReh%2BYzmPeWtjl9zuiFsTnaBM1ChJiF%2BXBR344spn9YfMmFi9RpBBwK3%2F5agOVJLN1bXS65IHmq7TDf4%2BvJBjqyAQSTY%2F3%2BIsiAAJZ%2BHn2CxDMsoddHZ3S7OQJRpuLf7J5rovQMXgQQCS8IsK7NXOyTqzcF8tVy9okrW1UPJCLeeMJGhwjux7bEVvDy9B6dFS4FAMc%2B9gbFavoCA45rYvvEqQx4dp4h5NlaqXeKee3E2BHY7%2FNbcqw9ho1bmsGOvoZJbiKDYWfMs6NHxzFSwHgh3zWjk4b6KQD3cDGVpoIOT6oulLOW%2F4KoLZvkrw6RBviYpTQ%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20251211T172439Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYYHXIN7VL%2F20251211%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=0270896ebce082e2d6658c0d3f66dfa2deaa740e340c06f372569d045437272b&hash=aa0b63faffd0efdd3a72bd74bbe1afe4a9d4c9e6483c9801fbe505fd22adac23&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0933365725002003&tid=spdf-fcf22ce5-80d4-4f13-beae-00123b5fea37&sid=804150fb81f817424b5815f4da0a5d5e0dbdgxrqa&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&rh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=0f155f05015501025054&rr=9ac6ad419817e892&cc=us) | 2025 | Tsinghua University | - | - |
+| | Benchmark | Question types | link | Input modality | Paper |
+| :--: | :-----: | :-----: | :-----: | :-----: | :--------- |
+| 1 | MedQA | choice | [link](https://ukgovernmentbeis.github.io/inspect_evals/evals/medqa/index.html) | text description | [What Disease Does This Patient Have? A Large-Scale Open Domain Question Answering Dataset from Medical Exams](https://arxiv.org/abs/2009.13081) 
+| 2 | DiagnosisArena | choice | [link](https://github.com/SPIRAL-MED/DiagnosisArena) | text description | [DiagnosisArena: Benchmarking Diagnostic Reasoning for Large Language Models](https://aclanthology.org/2026.findings-acl.151.pdf) |
+| 3 | NEJM | choice | [link](https://www.nejm.org/case-challenges) | text description + image | - |
+ 
