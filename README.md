@@ -1,4 +1,4 @@
-# Public benchmarks for LLM-based medical model
+# Public benchmarks for medical LLMs
 
 This is a updating summary for the public benchmarks for medical LLMs.
 
